@@ -1,25 +1,7 @@
 *{
     padding: 0;
-    margin: 0;
+    margin:0;
     box-sizing: border-box;
-}
-body{
-    z-index: 1;
-}
-
-.loader {
-    position: fixed;
-    top: 40%;
-    right: 48%;
-    z-index: 2;
-}
-
-.button-list {
-    display: none;
-    border-radius: 100% 100%;
-}
-.button-list:active {
-    transform: scale(1.2);
 }
 .sub-navi-list-menu-in {
     display: flex!important;
@@ -33,7 +15,6 @@ body{
     width: 60%;
     text-align: center;
     animation: list-menu-in 1s ease;
- 
     z-index: 2;
 }
 .sub-navi-list-menu-out {
@@ -47,8 +28,8 @@ body{
     width: 60%;
     text-align: center;
     animation: list-menu-out 1s ease;
-
 }
+
 @-webkit-keyframes list-menu-in{
     0%{
         left: -200px;
@@ -77,14 +58,17 @@ body{
 .sub-navi-list-menu  li:first-child:before {
     display: none;
 }
+
 .button-list {
+    display: none;
     position: absolute;
     width: 50px;
     height: 50px;
     background-color: red;
     top: 2%;
     left: 5%;
-    z-index: 2; 
+    z-index: 2;
+    border-radius: 100% 100%; 
 }
 .header-menu-logo:active,
 .header-menu-logo:hover {
@@ -219,7 +203,7 @@ body{
     content: "";
     position: absolute;
     height: 2px;
-    bottom:-30px;
+    bottom:-40px;
     left: -10px;
     right: -10px;
     background-color :#C1F8FF;
@@ -257,8 +241,10 @@ body{
     text-align: center;
     line-height: 50px;
     width: 230px;
+    color: white;
+    font-weight: 700;
+    border :0;
 }
-
 .btn-active{
     background-color: red;
 }
@@ -290,8 +276,7 @@ a img:hover, a img:active {
     flex-direction: column;
     justify-content: space-between;
     top: 60%;
-    
-    height: 30%;
+    height: 50%;
 }
 
 .navi-inner {
@@ -345,6 +330,7 @@ a img:hover, a img:active {
     font-size: 20px;
     line-height: 23.44px;
     padding: 43px 18px 50px 68px;
+    font-weight: 700;
 
 }
 
@@ -534,6 +520,9 @@ a img:hover, a img:active {
     padding-bottom: 206px;
 }
 
+.news-content .row >div:nth-child(2){
+    box-shadow:  2px 2px 20px -4px black;
+}
 .news-content-img {
     position: relative;
     height: 0;
@@ -577,6 +566,7 @@ a img:hover, a img:active {
     display: flex;
     justify-content: space-between;
     position :relative;
+    padding-bottom: 10px;
 }
 
 .news-footer-inner:before {
@@ -675,7 +665,7 @@ a img:hover, a img:active {
 
 .quotation-marks {
     position: absolute;
-    left: 14.54%;
+    left: 20%;
     top: 2%;
 }
 
@@ -927,6 +917,11 @@ a img:hover, a img:active {
 
 .footer-input {
     padding-bottom: 12px;
+  
+}
+.footer-input input {
+    background-color: #ECEFF4;
+    border :1px solid grey;
 }
 .footer-iframe {
     position: relative;
@@ -949,7 +944,8 @@ a img:hover, a img:active {
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    
+    padding-left: 5%;
+
 }
 
 .footer-input button {
@@ -958,6 +954,7 @@ a img:hover, a img:active {
     text-align: center;
     background-color: red;
     color : white;
+    border: 0;
 }
 
 .footer-linked-list-inner {
@@ -1041,6 +1038,9 @@ a img:hover, a img:active {
 }  
 
 @media screen and (max-width :1320px ){
+    .quotation-marks {
+        left :25%;
+    }
     .navi-inner-logo {
         top: 20%;
     }
@@ -1093,7 +1093,14 @@ a img:hover, a img:active {
     .header .wrapper {
         padding: 0 10%!important;
      }
+     .xemthem .row >div:first-child {
+        width: 70%!important;
+     }
+     .xemthem .row >div:last-child {
+         width: 30%!important;
+      }
 }   
+
 @media screen and (max-width :1000px ){
     .information-jonathan {
         bottom: 0;
@@ -1142,12 +1149,6 @@ a img:hover, a img:active {
     }
 }    
 @media screen and (max-width :800px ){
-    .xemthem .row >div:first-child {
-        width: 70%!important;
-     }
-     .xemthem .row >div:last-child {
-         width: 30%!important;
-      }
     .header-list-menu {
         flex-wrap: wrap;
     }
@@ -1211,6 +1212,15 @@ a img:hover, a img:active {
     }
 }    
 @media screen and (max-width :500px ){
+    .news-header {
+        padding:  0 0 ;
+    }
+    .ab-left-desciption-frame {
+        display: none;
+    }
+    .about-us-left-desciption {
+        display: none;
+    }
     .quotation-marks {
         display: none!important;
     }
@@ -1251,12 +1261,6 @@ a img:hover, a img:active {
 }    
 @media screen and (max-width :320px ){
    
-    .ab-left-desciption-frame {
-        display: none;
-    }
-    .about-us-left-desciption {
-        display: none;
-    }
     .about-us .wrapper {
         padding: 0 0!important;
     }
