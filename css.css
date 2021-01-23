@@ -921,7 +921,7 @@ a img:hover, a img:active {
 }
 .footer-input input {
     background-color: #ECEFF4;
-    border :1px solid grey;
+    border :0;
 }
 .footer-iframe {
     position: relative;
